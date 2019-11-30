@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="SinareBodyApp.views.DetailsPage"
+             BackgroundColor="White">
+    <ContentPage.Content>
+        <StackLayout >
+            <FlexLayout Margin="0,-50,0,0">
+                
+                <Image Source="{Binding Image}" Scale=".8" Margin="-40,10,0,0"/>
+                
+                <StackLayout Margin="0,140,0,0">
+                    <Label Text="{Binding Price}" FontSize="30"/>
+                    <Label Text="{Binding Description}" FontSize="20"/>
+                </StackLayout>
+            </FlexLayout>
+            <Label Text="Place Your Order" HorizontalOptions="Center" FontAttributes="Bold" FontSize="25" Margin="0,0,0,15"/>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <Entry Placeholder="Fullname" Grid.Row="0" Grid.Column="0" Margin="10"/>
+                <Entry Placeholder="Email Address" Grid.Row="0" Grid.Column="1" Margin="10"/>
+                <Entry Placeholder="Cellphone Number" Grid.Row="1" Grid.Column="0" Margin="10"/>
+                <Entry Placeholder="Shipping Address" Grid.Row="1" Grid.Column="1" Margin="10"/>
+                <Entry Placeholder="Order Amount" Grid.Row="2" Grid.Column="0" Margin="10"/>
+                <DatePicker Grid.Row="2" Grid.Column="1" Margin="10"/>
+            </Grid>
+            <FlexLayout Margin="10,10,10,10">
+            <Button Text="CANCEL" 
+                    CornerRadius="50" 
+                    HorizontalOptions="CenterAndExpand" 
+                    WidthRequest="200" BackgroundColor="Black" TextColor="White" Clicked="Cancel_Clicked"/>
+            <Button Text="ADD TO CART" 
+                    CornerRadius="50" 
+                    HorizontalOptions="CenterAndExpand" 
+                    WidthRequest="200"
+                    BackgroundColor="Transparent"
+                    BorderColor="Black"
+                    BorderWidth="4"
+                    Margin="5,0,0,0"
+                    Clicked="AddToCart_Clicked"/>
+            </FlexLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

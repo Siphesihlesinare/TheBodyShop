@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="SinareBodyApp.MainPage"  >
+
+   
+    <StackLayout>
+
+        <Grid>
+            <Grid.RowDefinitions >
+                <RowDefinition Height="100"/>
+                <RowDefinition  Height="100"/>
+                <RowDefinition  Height="100"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="100"/>
+                <ColumnDefinition Width="100"/>
+                
+            </Grid.ColumnDefinitions>
+         
+
+            <Image Source="page2.pjg" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" Scale="1.8">
+            </Image> 
+
+            <Image Source="block.jpg" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" Scale="1.8" >
+                <Image.GestureRecognizers>
+                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_1"/>
+                </Image.GestureRecognizers>
+            </Image>
+            
+            <Image Source="page5.jpg" Grid.Row="2" Grid.Column="2" Scale="1.8" >
+                
+               <Image.GestureRecognizers>
+                <TapGestureRecognizer Tapped = "TapGestureRecognizer_Tapped_2" />
+                </Image.GestureRecognizers>
+               </Image>
+
+            <Image Source="page1.jpg" Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2" Scale="0.9" Margin="0,40,0,0" >
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_3" />
+                </Image.GestureRecognizers>
+            </Image>
+            <Image Source="page4.jpg" Grid.Row="3" Grid.Column="2"  Scale="0.9" Margin="0,40,0,0"  >
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_4"/>
+                </Image.GestureRecognizers>
+            </Image>
+
+        </Grid>
+        <!-- Place new controls here -->
+
+    </StackLayout>
+
+</ContentPage>
