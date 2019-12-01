@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\SinareBodySln\\SinareBodyApp\\SinareBodyApp\\SinareBodyApp.csproj": {}
+    "C:\\Xamarin\\TheBodyShop\\SinareBodySln\\SinareBodyApp\\SinareBodyApp\\SinareBodyApp.csproj": {}
   },
   "projects": {
-    "C:\\SinareBodySln\\SinareBodyApp\\SinareBodyApp\\SinareBodyApp.csproj": {
+    "C:\\Xamarin\\TheBodyShop\\SinareBodySln\\SinareBodyApp\\SinareBodyApp\\SinareBodyApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\SinareBodySln\\SinareBodyApp\\SinareBodyApp\\SinareBodyApp.csproj",
+        "projectUniqueName": "C:\\Xamarin\\TheBodyShop\\SinareBodySln\\SinareBodyApp\\SinareBodyApp\\SinareBodyApp.csproj",
         "projectName": "SinareBodyApp",
-        "projectPath": "C:\\SinareBodySln\\SinareBodyApp\\SinareBodyApp\\SinareBodyApp.csproj",
+        "projectPath": "C:\\Xamarin\\TheBodyShop\\SinareBodySln\\SinareBodyApp\\SinareBodyApp\\SinareBodyApp.csproj",
         "packagesPath": "C:\\Users\\Siphesihle.Sinare\\.nuget\\packages\\",
-        "outputPath": "C:\\SinareBodySln\\SinareBodyApp\\SinareBodyApp\\obj\\",
+        "outputPath": "C:\\Xamarin\\TheBodyShop\\SinareBodySln\\SinareBodyApp\\SinareBodyApp\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -56,6 +56,10 @@
             "Xamarin.Forms": {
               "target": "Package",
               "version": "[4.3.0.991211, )"
+            },
+            "sqlite-net-pcl": {
+              "target": "Package",
+              "version": "[1.6.292, )"
             }
           },
           "imports": [

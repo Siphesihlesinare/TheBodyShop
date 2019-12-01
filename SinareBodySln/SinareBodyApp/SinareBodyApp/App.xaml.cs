@@ -1,4 +1,6 @@
-﻿using System;
+﻿using SinareBodyApp.ShopData;
+using System;
+using System.IO;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -6,7 +8,22 @@ namespace SinareBodyApp
 {
     public partial class App : Application
     {
+        
+        private static ShopDatabase productDatabase;
 
+        public static ShopDatabase Database
+        {
+            get
+            {
+                if (productDatabase == null)
+                    productDatabase = new ShopDatabase(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "TShirt.db3"));
+
+                return productDatabase;
+
+            }
+        }
+
+        public static object DataBase { get; internal set; }
 
         public App()
         {
@@ -14,8 +31,9 @@ namespace SinareBodyApp
             var mainPage = new MainPage();
             var navPage = new NavigationPage(mainPage);
 
-            navPage.BarBackgroundColor = Color.White;
+            navPage.BarBackgroundColor = Color.LightGray;
             navPage.BarTextColor = Color.Black;
+           
             
 
 

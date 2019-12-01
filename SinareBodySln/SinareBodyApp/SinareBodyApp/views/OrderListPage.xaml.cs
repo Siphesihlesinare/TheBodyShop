@@ -16,5 +16,10 @@ namespace SinareBodyApp.views
         {
             InitializeComponent();
         }
+
+        private async void OnListItemSelected(object sender, SelectedItemChangedEventArgs e)
+        {
+            await Navigation.PopAsync();
+        }
     }
 }

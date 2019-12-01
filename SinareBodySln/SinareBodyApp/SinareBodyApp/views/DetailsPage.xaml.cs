@@ -15,6 +15,7 @@ namespace SinareBodyApp.views
     {
         public Product CurrentProduct { get; set; }
 
+
         public DetailsPage(Product product)
         {
             InitializeComponent();
@@ -25,6 +26,9 @@ namespace SinareBodyApp.views
 
         private async void AddToCart_Clicked(object sender, EventArgs e)
         {
+           // var product = (Product)BindingContext;
+            //await App.DataBase.Sav(CurrentProduct);
+
             await Navigation.PushAsync(new OrderListPage());
         }
 
